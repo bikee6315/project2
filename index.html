@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+     <link href="tim/assets/css/font-awesome.css" rel="stylesheet">
+     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+      <title>Himalayan Restaurant</title>
+
+     <!-- Bootstrap -->
+     <link href="tim/assets/css/bootstrap.css" rel="stylesheet">
+
+     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+     <!--[if lt IE 9]>
+       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+     <![endif]-->
+
+<style>
+html,body{
+  width:100%;
+  height:100%;
+  margin:0px;
+  padding:0px;
+  overflow-x: hidden;
+}
+#home-background-image{
+width: 100%;
+height:100%;
+}
+.navbar{
+  margin-bottom: 0px;
+  background-color: transparent;
+  border:none;
+}
+#mynavigationbar a{
+  color:grey;
+}
+.navbar-default a.navbar-brand{
+  color:green;
+}
+.navbar-right a:hover{
+  color:red;
+}
+ .navbar-left li a:hover{
+  color:red;
+}
+.container-fluid{
+  background:#381818;
+  height:47px;
+}
+#about{
+  height:400px;
+}
+#home{
+  position:relative;
+  height:500px;
+  margin-top: 0;
+}
+#home .container{
+  position:absolute;
+  width:100%;
+  top:40%;
+}
+#home .heading{
+  color:white;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  line-height: 40px;
+  margin-top:-122px;
+}
+#home .intro{
+color:white;
+text-align: center;
+font-family: 'Bree Serif', serif;
+font-size: 26px;
+text-transform: uppercase;
+line-height: 68px;
+margin-top:47px;
+}
+.head{
+text-align: center;
+color: white;
+font-style: italic;
+font-size: 19px;
+font-family: 'Bree Serif', serif;
+}
+button{
+  color: #fff;
+  background-color:red;
+  border-color: #fed136;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 13px;
+  padding: 12px 40px;
+  margin-left: 542px;
+  margin-top: 36px;
+}
+a button:hover{
+  color:black;
+}
+section{
+  min-height: 661px;
+  margin-top: 35px;
+}
+h1{
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.line{
+  color:grey;
+  font-size: 20px;
+}
+.content{
+  text-align: center;
+  font-size: 19px;
+  color:brown;
+  margin-top: 32px;
+  margin-bottom: 60px;
+}
+.offer-img{
+  width:202px;
+  margin:0 auto;
+  height:200px;
+  border:5px solid green;
+}
+.offer-img:hover{
+    transform: rotate(60deg) scale(1.2);
+    transition: 1.3s;
+}
+.btn-round .know:hover{
+  color:black;
+  text-decoration:none;
+}
+.description{
+  text-align: center;
+}
+.topic{
+  padding-left: 20px;
+  font-weight: bold;
+  padding-top: 53px;
+  font-size:15px;
+}
+.about-image{
+  margin-bottom: 30px;
+}
+#about img{
+  margin-bottom: 30px;
+}
+.section-content-columns{
+  margin-top:40px;
+}
+#services{
+  margin-top:76px;
+}
+#team{
+  margin-top:-276px;
+}
+.team-img{
+  width:174px;
+  margin:0 auto;
+  border:2px;
+}
+.team-img:hover{
+  transform: scale(1.5);
+  transition: 1.3s;
+}
+.team-heading{
+margin-top: 40px;
+font-size: 27px;
+text-transform: uppercase;
+font-weight: 600;
+}
+.team-about{
+  color:#777;
+  padding:15px;
+  line-height: 22px;
+}
+.row-major{
+  margin-top: 37px;
+}
+.team-social-links a{
+  font-size: 21px;
+  text-decoration: none;
+  color:#bbbbbb;
+  margin-right: 10px;
+}
+.team-social-links a:hover{
+  color:blue;
+  font-size: 34px;
+}
+.common-section-area{
+  margin-bottom: 60px;
+}
+#googlemap{
+  height:400px;
+  width:100%;
+}
+footer{
+  background:rgba(30,30,30,0.97);
+  padding:20px;
+}
+.footer-links li, .footer-icons li{
+  display:inline-block;
+}
+.footer-links li a, .footer-icons li a{
+  color:#777777;
+  font-size: 16px;
+  padding: 10px;
+}
+.footer-links li a:hover, .footer-icons li a:hover{
+  text-decoration: none;
+  color:white;
+}
+footer .footer-center-content{
+  color:#777777;
+}
+.white-content{
+  color:white;
+}
+a .offer-img:hover{
+  opacity:1;
+  border-color:black;
+}
+.know:hover{
+  background:black;
+}
+.line1{
+  width:679px; height:47px;
+  border:solid 2px #fff;
+  border-color:#fff transparent transparent transparent;
+  border-radius: 161%/81px 135px 38px 0;
+}
+.line2{
+  width:679px; height:47px;
+  border:solid 2px #fff;
+  border-color:#fff transparent transparent transparent;
+  border-radius: 100%/50px 78px 23px 0;
+  margin-top: -64px;
+}
+.line3{
+  width:212px; height:47px;
+  border:solid 2px #fff;
+  border-color:#fff transparent transparent transparent;
+  margin-top: -0px;
+}
+.line4{
+  width:212px; height:17px;
+  border:solid 2px #fff;
+  border-color:#fff transparent transparent transparent;
+  margin-top: -65px;
+}
+@media(max-width: 500px){
+  #home-background-image{
+    width:100%;
+  }
+  #home .heading{
+    font-size:37px;
+  }
+  .line1, .line2{
+    width:352px;
+  }
+.navbar-default{
+  width:412px;
+  }
+  button{
+    margin-left: 97px;
+  }
+  .btn-round{
+    margin-left:-5px;
+  }
+  .section-content-column1{
+    margin-top: -14px;
+  }
+  .section-content-column{
+    padding-top:43px;
+  }
+  #services{
+    margin-top:-19px;
+  }
+  #team{
+    margin-top:20px;
+  }
+  .topic{
+    margin-top:-11px;
+  }
+  .dummy{
+    margin-top:1269px;
+  }
+  .my1{
+    margin-top:119px;
+  }
+  .section-heading{
+    margin-top:-12px;
+  }
+  .text-right{
+    margin-right:87px;
+    margin-top:12px;
+  }
+  .team-social-links{
+    margin-bottom: 29px;
+  }
+  hr{
+    margin-bottom:-36px;
+  }
+  .tags{
+    margin-right: -7px;
+    margin-left: -24px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavigationbar" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"></a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="mynavigationbar">
+    <ul class="nav navbar-nav navbar-left" style="margin-top:-2px;">
+      <li><a href="#about"style="color:#ab9999;font-size:17px;font-family: 'Bree Serif', serif;">ABOUT US</a></li>
+      <li><a href="#what we offer"style="color:#ab9999;font-size:17px;font-family: 'Bree Serif', serif;">WHAT WE OFFER</a></li>
+      <li><a href="#services"style="color:#ab9999;font-size:17px;font-family: 'Bree Serif', serif;">SERVICES</a></li>
+      <li><a href="#team"style="color:#ab9999;font-size:17px;font-family: 'Bree Serif', serif;">OUR TEAM</a></li>
+      <li><a href="#contact"style="color:#ab9999;font-size:17px;font-family: 'Bree Serif', serif;">CONTACT</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" style="margin-right:33px;margin-top:-2px;font-size:18px;">
+             <li><a href="http://facebook.com"style="color:#ab9999;"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="http://twitter.com"style="color:#ab9999;"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="http://googleplus.com"style="color:#ab9999;"><i class="fa fa-google-plus"></i></a></li>
+             <li><a href="http://linkedin.com"style="color:#ab9999;"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<section id="home">
+    <img id="home-background-image" src="tim/assets/images/dsc.jpg">
+    <div class="container">
+      <div class="heading">HIMALAYAN NEPALESE RESTAURANT AND CAFE</div>
+      <hr class="line1">
+      <hr class="line2">
+       <div class="intro">NAMASTE!</div>
+       <hr class="line3">
+       <hr class="line4">
+       <h3 class="head">Welcome to Himalayan Nepalese Restaurant</h3>
+       <a href="#about"><button type="button">Tell me more</button></a>
+    </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+     <div class="common-section-area">
+         <h1 class="text-center"style="font-family: 'Bree Serif', serif;">About Us</h1>
+          <!-- <hr class="line" />-->
+      <p class="content">Himalayan Nepalese Restaurant and Cafe now introduces the unique tastes of the Himalayas right in the middle of Victoria Park, Inglewood and Mosman Park.Our restaurants provide a friendly, tranquil environment where you will hear the haunting sounds of the Himalayas. Sit back and enjoy the freshly created taste sensations that only Himalayan Nepalese Restaurant Cafe can offer.</p>
+             </div>
+         </div>
+       <div class="row" style="margin-top:-43px;">
+           <div class="col-md-4">
+             <img src="tim/assets/images/biryani.jpg" class="img-responsive ">
+             <img src="tim/assets/images/pizza.jpg" class="img-responsive">
+               </div>
+           <div class="col-md-4">
+             <img src="tim/assets/images/cocktail.jpg"  class="img-responsive">
+             <img src="tim/assets/images/vegetable.jpg" class="img-responsive ">
+             <img src="tim/assets/images/grilled.jpg" class="img-responsive ">
+           </div>
+           <div class="col-md-4">
+             <img src="tim/assets/images/dsc.jpg" class="img-responsive ">
+             <img src="tim/assets/images/photo.jpg" class="img-responsive ">
+           </div>
+         </div>
+       </div>
+</section>
+
+<section id="what we offer"style="padding-top:387px">
+  <div class="container">
+    <div class="row">
+      <div class="common-section-area">
+      <h1 class="text-center dummy"style="font-family: 'Bree Serif', serif;">WHAT WE OFFER</h1>
+    </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 text-center section-content-column1">
+              <a href="http://www.himalayanrestaurant.com.au">
+              <img src="tim/assets/images/tasty.jpg" class="img-responsive img-circle offer-img">
+            </a>
+            <h3 class="topic"><i class="fa fa-cutlery" aria-hidden="true"style="margin-left:-40px;margin-right:10px;color:#c85454;"></i>TASTY & DELICIOUS</h3>
+                <p class="description">Himalayan Nepalese Restaurant and Café is famous for preparing Nepalese cuisine and Indian cuisine with real herbs & spices.</p>
+                <button class="btn btn-round"style="border-radius:18px;background:#cf986a;margin-left:-11px;font-family: 'Bree Serif', serif;"><a class="know" href="http://www.himalayanrestaurant.com.au"style="color:#fff;">Know More</a></button>
+            </div>
+  <div class="col-md-3 text-center section-content-column">
+    <a href="http://www.himalayanrestaurant.com.au">
+    <img src="tim/assets/images/event1.jpg" class="img-responsive img-circle offer-img"></a>
+     <h3 class="topic">AWESOME EVENTS</h3>
+       <p class="description">We serve verities of Nepalese and Indian foods freshly made from our experienced chef.</p>
+       <button class="btn btn-round"style="border-radius:18px;background:#cf986a;margin-left:2px;font-family: 'Bree Serif', serif;"><a class="know" href="http://www.himalayanrestaurant.com.au"style="color:#fff;">Know More</a></button>
+  </div>
+  <div class="col-md-3 text-center section-content-column">
+    <a href="http://www.himalayanrestaurant.com.au">
+    <img src="tim/assets/images/kid.jpg" class="img-responsive img-circle offer-img"></a>
+    <h3 class="topic">KIDS AREA AVAILABLE</h3>
+      <p class="description">We welcome our guest & we are always committed in making them happy with delicious foods.</p>
+      <button class="btn btn-round"style="border-radius:18px;background:#cf986a;margin-left:2px;font-family: 'Bree Serif', serif;"><a class="know" href="http://www.himalayanrestaurant.com.au"style="color:#fff;">Know More</a></button>
+   </div>
+   <div class="col-md-3 text-center section-content-column ">
+     <a href="http://www.himalayanrestaurant.com.au">
+     <img src="tim/assets/images/function.jpg" class="img-responsive img-circle offer-img"></a>
+     <h3 class="topic"><i class="fa fa-glass" aria-hidden="true"style="margin-right:7px;color:#c85454;"></i>OTHER FUNCTIONS</h3>
+       <p class="description">Himalayan Nepalese Restaurant and Cafe specialises in making every event a success .</p>
+       <button class="btn btn-round"style="border-radius:18px;background:#cf986a;margin-left:2px;font-family: 'Bree Serif', serif;"><a class="know" href="http://www.himalayanrestaurant.com.au"style="color:#fff;">Know More</a></button>
+    </div>
+           </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center my1"style="font-family: 'Bree Serif', serif;">SERVICES</h1>
+      <div class="container" style="margin-top:21px;">
+        <div class="row">
+          <div class="col-md-4 text-center section-content-columns">
+            <i class="fa fa-wifi" style="font-size:80px;"></i>
+            <h2>Free Wifi</h2>
+            <p>Get free wifi access in our hotel, feel free to move and stay connected to the outside world.</p>
+          </div>
+          <div class="col-md-4 text-center section-content-columns">
+            <i class="fa fa-car" style="font-size:80px;"></i>
+            <h2>Free Transport</h2>
+            <p>Get our free Transportation Facility in the City and enjoy your pleasureble trip.</p>
+          </div>
+          <div class="col-md-4 text-center section-content-columns">
+            <i class="fa fa-inr" style="font-size:80px;"></i>
+            <h2>Pay When You Stay</h2>
+            <p>Yes, we also provide this facility to you, no checkin advances,only pay when you stay.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center section-heading" style="margin-top:70px;font-family: 'Bree Serif', serif;">OUR TEAM</h1>
+      <div class="container">
+        <div class="row-major">
+          <div class="col-md-4">
+      <img src="tim/assets/images/diana.png" class="img-responsive img-circle team-img">
+      <h3 class="text-center team-heading"style="font-family: 'Bree Serif', serif;">Brooke Williamson</h3>
+      <p class="text-center team-about">Brooke Williamson is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</p>
+      <hr width="50%" align="center">
+      <div class="team-social-links text-center">
+        <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+<div class="col-md-4">
+    <img src="tim/assets/images/alex.png" class="img-responsive img-circle team-img">
+        <h3 class="text-center team-heading"style="font-family: 'Bree Serif', serif;">Howard</h3>
+        <p class="text-center team-about">Howard is the person behind our social media channels, she takes care of our users' community and communication. She is ambitious, hard-working, instantly likeable and fun to be around. </p>
+        <hr width="50%" align="center">
+        <div class="team-social-links text-center">
+          <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+              <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+    </div>
+<div class="col-md-4">
+    <img src="tim/assets/images/elena.jpg" class="img-responsive img-circle team-img">
+        <h3 class="text-center team-heading"style="font-family: 'Bree Serif', serif;">Jeff Crump</h3>
+        <p class="text-center team-about">Jeff Crump is one of the co-founders and drives the technical strategy of the platform, customer support and brand. He is level-headed, smart and with a taste for simple, aesthetic design.</p>
+        <hr width="50%" align="center">
+        <div class="team-social-links text-center">
+          <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+              <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+    </div>
+</div>
+  </div>
+    </div>
+      </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="common-section-area">
+      <h1 class="text-center section-heading"style="font-family: 'Bree Serif', serif;">CONTACT</h1>
+      </div>
+    </div>
+     <div class="row">
+       <div class="col-md-3" style="background-color:rgb(106, 177, 170);margin-bottom:20px;height:604px;">
+         <h3 style="font-family:'Roboto',sans-serif; padding-top:50px;color:#fff;">We Always Welcome You At:</h3>
+         <p style="font-family:'Roboto',sans-serif;margin-top:24px;">N-81, Barakhamba Road, Block N, Cannaught Place, Block N, Connaught Place, New Delhi, Delhi 110001</p>
+         <h3 style="font-family:'Roboto',sans-serif;margin-bottom:19px;">Want To Book Now?</h3>
+         <button class="btn btn-info">CONTACT US</button>
+          <h3 style="font-family:'Roboto',sans-serif;">Thank you for 1500 shares!</h3>
+          <h4 style="font-family:'Roboto',sans-serif;margin-top:17px;">Follow us at:</h4>
+          <br>
+          <a href="#"><i class="fa fa-facebook" style="font-size:30px;"></i></a>
+          <a href="#"><i class="fa fa-twitter" style="font-size:30px;padding-left:10px;margin-bottom:20px;"></i></a>
+          <a href="#"><i class="fa fa-youtube" style="font-size:30px;"></i></a>
+          <a href="#"><i class="fa fa-instagram" style="font-size:30px;padding-left:6px;"></i></a>
+       </div>
+       <div class="col-md-9" style="height:604px;">
+         <div id="googlemap">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9602913100834!2d77.22058651508259!3d28.630952182418408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3247bde12b%3A0xb0c16dc7587bbe82!2sBarakhamba+Rd%2C+Block+N%2C+Barakhamba%2C+New+Delhi%2C+Delhi+110001!5e0!3m2!1sen!2sin!4v1486890749013" style="border:0" allowfullscreen="" width="100%" height="600" frameborder="0"></iframe>"
+         </div>
+       </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="footer-links">
+          <ul class="tags">
+  					<li><a href="#home">Home</a></li>
+  					<li><a href="#contact">Contact</a></li>
+  					<li><a href="#">Pricing</a></li>
+  					<li><a href="#services">Services</a></li>
+  				</ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="footer-center-content text-center">
+          &copy;Copyright <span class="white-content">Himalayan</span> 2017
+  			</div>
+      </div>
+      <div class="col-md-4">
+        <div class="footer-icons text-right">
+          <ul>
+          <li><a href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="http://instagram.com"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="http://googleplus.com"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+		</footer>
+
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=initMap">
+    </script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="tim/assets/js/bootstrap.js"></script>
+</body>
+</html>
